@@ -7,7 +7,6 @@ export function Coluna(){
             <Tarefa/>
             <Tarefa/>
             
-
         </section>
     )
 }

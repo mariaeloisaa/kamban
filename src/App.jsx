@@ -1,17 +1,13 @@
-import './App.css';
-import './styles/main.scss';
-import { BarraNavegacao } from './components/navBar';
-import { Cabecalho } from './components/cabecalho';
-import { Quadro } from './components/quadro';
+import {BrowserRouter} from "react-router-dom";
+import { Rotas } from './routes/Routes';
 
 function App() {
 
   return (
-    <>
-    <Cabecalho/>
-    <Quadro/>
-      
-    </>
+    <BrowserRouter>
+      <Rotas/>
+    </BrowserRouter>
+
   )
 }
 
