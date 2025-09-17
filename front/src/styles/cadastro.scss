@@ -1,0 +1,57 @@
+@use './variaveis.scss' as *;
+
+.formulario {
+  max-width: 600px;
+  margin: 40px auto; // centraliza na tela
+  padding: 20px;
+  background-color: $background;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+  .titulo {
+    font-size: 24px;
+    color: $cor-destaque;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  input, select {
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid $cor-destaque;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  p.erro {
+    color: red;
+    font-size: 14px;
+    margin-top: 2px;
+  }
+
+  button {
+    background-color: $cor-destaque;
+    color: $background;
+    padding: 12px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: darken($cor-destaque, 10%);
+    }
+  }
+}
