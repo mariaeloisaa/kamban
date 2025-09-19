@@ -107,7 +107,7 @@ export function CadTarefa() {
       <h2 className="titulo">{id ? "Editar Tarefa" : "Cadastro de Tarefa"}</h2>
 
       <label htmlFor="descricao">Descrição:</label>
-      <input 
+      <textarea 
         id="descricao" 
         type="text" 
         {...register("descricao")} 
