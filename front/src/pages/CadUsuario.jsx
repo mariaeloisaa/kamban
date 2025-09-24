@@ -14,6 +14,7 @@ const schemaCadUsuario = z.object({
     ),
   email: z
     .string()
+    .min(1, "Informe ao menos um valor para o username")
     .regex(
       /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-z]{2,}$/,
       "Formato de e-mail incorreto"
